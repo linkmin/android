@@ -124,5 +124,4 @@ public class MainActivity extends FragmentActivity {
         rbFriends=(RadioButton)findViewById(R.id.rb_Friends);
         rbMy=(RadioButton)findViewById(R.id.rb_My);
     }
-vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 }
