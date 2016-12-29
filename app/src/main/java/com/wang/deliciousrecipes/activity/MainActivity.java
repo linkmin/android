@@ -1,4 +1,4 @@
-package com.wang.deliciousrecipes.activity;
+﻿package com.wang.deliciousrecipes.activity;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -124,4 +124,5 @@ public class MainActivity extends FragmentActivity {
         rbFriends=(RadioButton)findViewById(R.id.rb_Friends);
         rbMy=(RadioButton)findViewById(R.id.rb_My);
     }
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 }
