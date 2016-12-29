@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.wang.deliciousrecipes.activity.MainActivity">
+
+    <com.wang.deliciousrecipes.widget.CustomViewPager
+    android:layout_width="match_parent"
+     android:id="@+id/viewPager"
+     android:layout_above="@+id/rg_RadioGroup"
+     android:layout_height="match_parent"/>
+
+    <RadioGroup
+        android:id="@+id/rg_RadioGroup"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:background="@color/color_background_gray"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/seletor_tab_bar_recommend"
+            android:button="@null"
+            android:enabled="true"
+            android:gravity="center_horizontal"
+            android:id="@+id/rb_Recommend"
+            android:textSize="@dimen/auxiliary_text_min"
+            android:drawablePadding="8dp"
+            android:text="推荐"
+            android:textColor="@drawable/seletor_tab_bar_color"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:gravity="center_horizontal"
+            android:drawableTop="@drawable/seletor_tab_bar_menu"
+            android:button="@null"
+            android:id="@+id/rb_Menu"
+            android:drawablePadding="8dp"
+            android:textColor="@drawable/seletor_tab_bar_color"
+            android:layout_weight="1"
+            android:text="菜谱"
+            android:textSize="@dimen/auxiliary_text_min"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:layout_width="0dp"
+            android:id="@+id/rb_Friends"
+            android:drawableTop="@drawable/seletor_tab_bar_friends"
+            android:button="@null"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textColor="@drawable/seletor_tab_bar_color"
+            android:drawablePadding="8dp"
+            android:text="好友"
+            android:textSize="@dimen/auxiliary_text_min"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textColor="@drawable/seletor_tab_bar_color"
+            android:drawableTop="@drawable/seletor_tab_bar_my"
+            android:button="@null"
+            android:drawablePadding="8dp"
+            android:id="@+id/rb_My"
+            android:text="我的"
+            android:textSize="@dimen/auxiliary_text_min"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+</RelativeLayout>
